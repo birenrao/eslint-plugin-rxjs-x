@@ -48,6 +48,7 @@ import { preferObserverRule } from './rules/prefer-observer';
 import { preferRootOperatorsRule } from './rules/prefer-root-operators';
 import { suffixSubjectsRule } from './rules/suffix-subjects';
 import { throwErrorRule } from './rules/throw-error';
+import { noNestedPipeRule } from './rules/no-nested-pipe';
 
 const plugin = {
   meta: { name, version },
@@ -97,6 +98,7 @@ const plugin = {
     'prefer-root-operators': preferRootOperatorsRule,
     'suffix-subjects': suffixSubjectsRule,
     'throw-error': throwErrorRule,
+    'no-nested-pipe': noNestedPipeRule,
   },
 } satisfies TSESLint.FlatConfig.Plugin;
 
