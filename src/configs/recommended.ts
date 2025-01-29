@@ -28,5 +28,6 @@ export const createRecommendedConfig = (
     'rxjs-x/prefer-observer': 'error',
     'rxjs-x/prefer-root-operators': 'error',
     'rxjs-x/throw-error': 'error',
+    'rxjs-x/no-nested-pipe': 'error',
   },
 } satisfies TSESLint.FlatConfig.Config);
